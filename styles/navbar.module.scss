@@ -1,0 +1,127 @@
+.navbar {
+    .container {
+        position: relative;
+
+        .menu {
+            position: absolute;
+            left: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 88%;
+            height: 64px;
+
+            .listMenu {
+                display: flex;
+
+                .logo {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: rgb(218, 61, 43);
+                }
+
+                .list {
+                    display: flex;
+                    margin-top: 7px;
+                    margin-left: 10px;
+                    padding-left: 2rem;
+
+                    li {
+                        list-style-type: none;
+
+                        a {
+                            margin-right: 2rem;
+                            cursor: pointer;
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: rgb(218, 61, 44);
+                        }
+                    }
+                }
+            }
+
+            .account {
+                display: flex;
+                align-items: center;
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        margin-right: 2rem;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: rgb(218, 61, 44);
+                    }
+
+                    .signup {
+                        padding: 0.5rem 0.75rem;
+                        background-color: #e2695a;
+                        color: #fff;
+                        border-radius: 0.25rem;
+                        display: flex;
+
+                        &:hover {
+                            background-color: #da3d2b;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media(max-width:500px) {
+    .navbar {
+        .container {
+            .menu {
+                left: 20px;
+
+                .listMenu {
+                    .logo {
+                        position: absolute;
+                        z-index: 10;
+                        top: 20px;
+                        font-size: 15px;
+                    }
+
+                    .list {
+                        display: none;
+                    }
+                }
+
+                .account {
+                    li {
+                        .signup {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:500px) and (max-width:700px) {
+    .navbar {
+        .container {
+            .menu {
+                left: 25px;
+
+                .listMenu {
+                    .logo {
+                        position: absolute;
+                        z-index: 10;
+                        top: 13px;
+                    }
+
+                    .list {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

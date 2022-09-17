@@ -1,0 +1,91 @@
+.banner {
+    height: 100vh;
+    background-color: #fceae8;
+    position: relative;
+
+    .shapeCircle {
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 2;
+        height: 80px;
+        width: 80px;
+        left: 0px;
+        top: 0px;
+        background-color: rgb(255, 180, 154);
+        border-radius: 0px 0px 200px;
+    }
+
+    .description {
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .text {
+                .title {
+                    font-size: 36px;
+                    font-weight: bold;
+                    color: rgb(218, 61, 44);
+
+                    .newline {
+                        display: block;
+                    }
+                }
+
+                .smallText {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: rgb(218, 61, 44);
+                    padding: 1rem 0;
+
+                    .newline {
+                        display: block;
+                    }
+                }
+
+                .btnSignup {
+                    width: 300px;
+                    height: 46px;
+                    background-color: #DB3C28;
+                    color: #fff;
+                    text-transform: capitalize;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 1.5rem;
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 2px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #2f3571;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .banner {
+        height: 150vh;
+
+        .description {
+            .grid {
+                grid-template-columns: 1fr;
+                row-gap: 20px;
+                .text{
+                    .btnSignup{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}

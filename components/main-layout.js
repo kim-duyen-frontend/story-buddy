@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../features/navbar';
+import Banner from '../features/banner';
 
 const MainLayout = ({ children }) => {
     return (
         <>
-            <Navbar />
+            <Banner />
             {children}
         </>
     );
