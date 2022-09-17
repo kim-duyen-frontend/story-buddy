@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import styles from "../../styles/guideuse.module.scss";
+import styles from "../../styles/procedure.module.scss";
 
-const GuideUse = () => {
+const Procedure = () => {
     const data = [
         {
             title: "Learn How To Craft Creative Content Yourself!",
@@ -41,4 +41,4 @@ const GuideUse = () => {
     );
 };
 
-export default GuideUse;
+export default Procedure;

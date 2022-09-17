@@ -2,7 +2,7 @@ import React from "react";
 import Head from 'next/head';
 import MainLayout from "../components/main-layout";
 import Explore from "../features/explore";
-import GuideUse from "../features/guide-use";
+import Procedure from "../features/procedure";
 
 function Home() {
   return (
@@ -13,7 +13,7 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Explore />
-      <GuideUse />
+      <Procedure />
     </>
   )
 }
