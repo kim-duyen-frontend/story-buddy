@@ -5,6 +5,7 @@ import Explore from "../features/explore";
 import Procedure from "../features/procedure";
 import GuideUse from "../features/guide-use";
 import Partners from "../features/partners";
+import Contact from "../features/contact";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <Procedure />
       <GuideUse />
       <Partners />
+      <Contact />
     </>
   )
 }
