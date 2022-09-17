@@ -4,6 +4,7 @@ import MainLayout from "../components/main-layout";
 import Explore from "../features/explore";
 import Procedure from "../features/procedure";
 import GuideUse from "../features/guide-use";
+import Partners from "../features/partners";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Explore />
       <Procedure />
       <GuideUse />
+      <Partners />
     </>
   )
 }
