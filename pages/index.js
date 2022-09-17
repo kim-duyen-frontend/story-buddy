@@ -3,6 +3,7 @@ import Head from 'next/head';
 import MainLayout from "../components/main-layout";
 import Explore from "../features/explore";
 import Procedure from "../features/procedure";
+import GuideUse from "../features/guide-use";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       </Head>
       <Explore />
       <Procedure />
+      <GuideUse />
     </>
   )
 }
