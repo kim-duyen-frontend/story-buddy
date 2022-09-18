@@ -1,0 +1,24 @@
+.intro {
+    padding: 2rem 0;
+
+    .bg {
+        background: url("../public/images/https___s3.amazonaws.png");
+        height: 200px;
+        width: 100%;
+        border-radius: 1rem;
+        position: relative;
+
+        .text {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding-left: 1.5rem;
+
+            >h3 {
+                color: #DA3D2B;
+                font-size: 28px;
+                font-weight: bold;
+            }
+        }
+    }
+}
