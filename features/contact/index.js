@@ -16,7 +16,9 @@ const Contact = () => {
                 <input className={styles.inputEmail} />
                 <label>Inquiry:</label>
                 <textarea cols="50" rows="20" className={styles.inputText} />
-                <button className={styles.btnSubmit}>Submit</button>
+                <div className={styles.btn}>
+                    <button className={styles.btnSubmit}>Submit</button>
+                </div>
             </div>
         </div>
     );
