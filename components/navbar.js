@@ -25,7 +25,9 @@ const Navbar = () => {
                     </div>
                     <ul className={styles.account}>
                         <li>
-                            <a>Login</a>
+                            <Link href="/auth/login">
+                                <a>Login</a>
+                            </Link>
                         </li>
                         <li>
                             <a className={styles.signup}>Sign up</a>
