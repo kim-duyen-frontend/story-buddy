@@ -1,0 +1,29 @@
+.headerLogin {
+    height: 64px;
+    background-color: #fde7e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(218, 61, 43);
+        text-transform: uppercase;
+    }
+
+    .combobox {
+        margin-left: 5rem;
+    }
+}
+
+@media(max-width: 400px) {
+    .headerLogin {
+        .logo{
+            font-size: 18px;
+        }
+        .combobox {
+            margin-left: 1rem;
+        }
+    }
+}
