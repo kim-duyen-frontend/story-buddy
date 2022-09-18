@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import styles from "../styles/navbar.module.scss";
 
@@ -10,10 +11,15 @@ const Navbar = () => {
                         <div className={styles.logo}>STORYBUDDY</div>
                         <ul className={styles.list}>
                             <li>
-                                <a>Home</a>
+                                <Link href="/">
+                                    <a>Home</a>
+                                </Link>
                             </li>
+
                             <li>
-                                <a>Plan</a>
+                                <Link href="/plan">
+                                    <a>Plan</a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
