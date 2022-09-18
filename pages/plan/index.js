@@ -3,6 +3,7 @@ import Head from 'next/head';
 import PlanLayout from '../../components/plan-layout';
 import Intro from '../../features/intro';
 import PackageUser from '../../features/package-user';
+import BuddyToken from '../../features/buddy-token';
 
 const PlanPage = () => {
     return (
@@ -14,6 +15,7 @@ const PlanPage = () => {
             </Head>
             <Intro />
             <PackageUser />
+            <BuddyToken />
         </>
     );
 };

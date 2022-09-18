@@ -1,0 +1,89 @@
+.buddyToken {
+    background-color: #f9dbd9;
+    padding: 4rem 0;
+    position: relative;
+
+    .shape {
+        position: absolute;
+        box-sizing: border-box;
+        z-index: 1;
+        height: 60px;
+        width: 60px;
+        right: 80px;
+        top: 30px;
+        background-color: rgb(255, 180, 154);
+        border-radius: 0px;
+        transform: rotate(45deg);
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        .box {
+            border: 1px solid #ffb49a;
+            min-width: 75vw;
+            border-radius: 1rem;
+            background-color: #fff;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .question {
+                color: #DA3D2B;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .token {
+                color: #DA3D2C;
+                font-size: 36px;
+                font-weight: bold;
+                padding: 1rem 0;
+            }
+
+            .price {
+                margin-left: auto;
+                margin-right: auto;
+
+                .btnPrice {
+                    min-width: 12rem;
+                    height: 3rem;
+                    color: #fff;
+                    background: none rgba(218, 61, 43, 0.5);
+                    border: none;
+                    border-radius: 0.5rem;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+
+            .des {
+                font-size: 16px;
+                font-weight: 600;
+                color: #FA816E;
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .buddyToken {
+        .shape {
+            display: none;
+        }
+
+        .container {
+            .box {
+
+                .question,
+                .token {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
