@@ -1,0 +1,55 @@
+.navbarHome {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fceae8;
+        height: 64px;
+        align-items: center;
+        padding: 0 2rem;
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(218, 61, 43);
+        }
+
+        .infoUser {
+            display: flex;
+            align-items: center;
+
+            .email {
+                margin-right: 1rem;
+                color: #84170F;
+            }
+
+            .linkOut {
+                padding: 0.5rem 0.75rem;
+                background-color: #e2695a;
+                color: #fff;
+                border-radius: 0.25rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media(max-width:640px) {
+    .navbarHome {
+        .container {
+            padding: 0;
+
+            justify-content: space-around;
+
+            .logo {
+                display: none;
+            }
+
+            .infoUser {
+                .linkOut {
+                    padding: 0.25rem 0.5rem;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
