@@ -28,13 +28,15 @@ const LoginPage = () => {
             }
         }, 3000);
         return () => clearTimeout(timer);
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isDisabled])
 
     return (
         <div className={styles.loginPage}>
             <HeaderLogin />
             <div className={styles.logo}>
-                <Image priority src="/images/logo-login.png" layout="fill" objectFit="contain" />
+                <Image priority src="/images/logo-login.png" layout="fill" objectFit="contain" alt="logo login" />
             </div>
             <h2 className={styles.title}>Welcome Back</h2>
             <div className={styles.container}>
