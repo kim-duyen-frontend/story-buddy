@@ -7,9 +7,10 @@ const NavbarHome = () => {
 
     const handleSignOut = () => {
         localStorage.removeItem("token");
+        localStorage.removeItem("email");
         window.location.href = "/auth/login";
     }
-    
+
     return (
         <div className={styles.navbarHome}>
             <div className={styles.container}>
